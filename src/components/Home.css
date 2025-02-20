@@ -1,0 +1,109 @@
+/* Full-Screen Container */
+.home-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Left Section (Logo + Heading) */
+  .left-section {
+    width: 50%;
+    background: linear-gradient(135deg, #007bff, #00d4ff);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Right Section (Buttons) */
+  .right-section {
+    width: 50%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Buttons */
+  .home-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 60%;
+  }
+  
+  button {
+    padding: 14px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Vertical Curved Divider */
+  .curved-divider {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    background: white;
+    clip-path: ellipse(50% 100% at 0% 50%);
+    z-index: 1;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .home-container {
+      flex-direction: column;
+    }
+  
+    .left-section, .right-section {
+      width: 100%;
+      height: 50%;
+    }
+  
+    .curved-divider {
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        background: white;
+        bottom: 0;
+        border-top-left-radius: 50% 50px;
+        border-top-right-radius: 50% 50px;
+        clip-path: ellipse(60% 100% at 5% 50%)
+    }
+  
+    .home-buttons {
+      width: 80%;
+    }
+    
+  }
+  .logo {
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Maintain equal width & height for a perfect circle */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fits within the circular boundary */
+    border: 4px solid white; /* Optional: Adds a white border around the circle */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Adds a soft shadow */
+    
+  }

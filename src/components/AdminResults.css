@@ -1,0 +1,28 @@
+.container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.download-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.results-table th, .results-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.results-table th {
+  background-color: #f4f4f4;
+}

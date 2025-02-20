@@ -1,0 +1,33 @@
+.tests-container {
+    text-align: center;
+    padding: 20px;
+    display: ;
+  }
+  
+  .test-card {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    width: 250px;
+    margin: 10px auto;
+    text-align: center;
+  }
+  
+  .test-card h4 {
+    margin-bottom: 8px;
+  }
+  
+  .test-card button {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .test-card button:hover {
+    background-color: #0056b3;
+  }
+  

@@ -1,0 +1,75 @@
+.coding-round-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  .start-coding-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    width: auto;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: background 0.3s;
+  }
+  
+  .start-coding-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .confirmation-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .confirmation-section input {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+  }
+  
+  .confirmation-section label {
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .submit-btn1 {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: auto;
+    transition: background 0.3s;
+  }
+  
+  .submit-btn1:hover {
+    background-color: #218838;
+  }
+  

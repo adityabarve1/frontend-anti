@@ -1,0 +1,102 @@
+.test-container {
+  display: flex;
+  gap: 20px;
+  height: 100vh; /* Ensure the container takes full height */
+  overflow-x: hidden; /* Disable horizontal scrolling on the container */
+}
+
+.question-sidebar {
+  width: 200px; /* Adjust the width of the sidebar */
+  background-color: #f9f9f9; /* Background color for the card */
+  border-radius: 10px; /* Rounded corners for the card */
+  padding: 20px; /* Add padding inside the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for card effect */
+  position: fixed; /* Make it fixed to the left side */
+  top: 20px; /* Add space from the top */
+  left: 20px; /* Add space from the left */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: calc(100vh - 40px); /* Adjust the height to avoid overlapping with the top */
+  overflow-y: auto; /* Allow vertical scrolling if there are many questions */
+  overflow-x: hidden; /* Disable horizontal scrolling in the sidebar */
+}
+
+.question-btn {
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border-radius: 5px; /* Rounded buttons */
+}
+
+.question-btn.visited {
+  background-color: red;
+  color: white;
+}
+
+.question-btn.answered {
+  background-color: green;
+  color: white;
+}
+
+.submit-btn {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px; /* Rounded submit button */
+}
+
+.question-section {
+  flex: 1;
+  margin-left: 240px; /* Ensure content is not hidden behind the fixed sidebar */
+  padding: 60px; /* Padding around the content */
+  background-color: #fff; /* Background for the content area */
+  border-radius: 10px; /* Rounded corners for content area */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for content */
+  overflow-x: hidden; /* Prevent horizontal scrolling in content */
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.option-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: row; /* Ensures the radio buttons are aligned in a row */
+  padding: 15px; /* Padding inside the card */
+  background-color: #f9f9f9; /* Card background color */
+  border-radius: 8px; /* Rounded corners for the card */
+  border: 1px solid #ddd; /* Light border around the card */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for the card effect */
+  cursor: pointer; /* Add cursor pointer for hover effect */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Add smooth transition for hover effect */
+  width: 100%; /* Ensure all option containers have the same width */
+}
+
+.option-label:hover {
+  transform: translateY(-5px); /* Slight lift effect when hovering */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+}
+
+
+.option-label input[type="radio"] {
+  margin-right: 10px; /* Add space between radio button and label */
+}
+
+.option-label span {
+  font-size: 14px; /* Adjust the font size of the label */
+  color: #333; /* Set text color */
+}
+
+.navigation-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
