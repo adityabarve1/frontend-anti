@@ -27,7 +27,7 @@ const Dashboard = () => {
                 <button onClick={() => navigate("/aptitude-tests")}>Aptitude Test</button>
                 <button onClick={() => navigate("/technical-tests")}>Technical Round</button>
                 {/* Add the Result button here if needed */}
-                {/* <button onClick={() => navigate("/results")}>Results</button> */}
+                <button onClick={() => navigate("/results")}>Results</button>
             </div>
         </div>
     );
