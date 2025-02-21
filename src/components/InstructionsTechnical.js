@@ -68,7 +68,7 @@ const InstructionsTechnical = () => {
   return (
     <div className="instructions-container">
       <h2>Test Instructions</h2>
-      <p>1. The test duration is 30 minutes.</p>
+      <p>1. The test duration is 40 minutes.</p>
       <p>2. Questions are multiple-choice.</p>
       <p>3. Do not refresh the page during the test.</p>
 
