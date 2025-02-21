@@ -16,7 +16,7 @@ const TechnicalTestPage = () => {
     JSON.parse(localStorage.getItem("selectedAnswers")) || {}
   );
   const [timeLeft, setTimeLeft] = useState(
-    parseInt(localStorage.getItem("timeLeft")) || 30 * 60 // 20-minute timer
+    parseInt(localStorage.getItem("timeLeft")) || 40 * 60 // 20-minute timer
   );
   const [submitted, setSubmitted] = useState(false);
 
